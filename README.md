@@ -138,7 +138,7 @@ Protected routes use AuthGuard and role-based checks
 
 ---
 
-##License
+## License
 
 MIT License
 
