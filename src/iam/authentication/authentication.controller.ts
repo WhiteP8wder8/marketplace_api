@@ -6,8 +6,6 @@ import {Response} from "express";
 import {Auth} from "./decorators/auth.decorator";
 import {AuthType} from "./enums/auth-type.enum";
 import {RefreshTokenDto} from "./dto/refresh-token.dto/refresh-token.dto";
-import {Roles} from "../authorization/decorators/roles.decorator";
-import {UsersRole} from "../../users/enums/users-role.enum";
 
 @Auth(AuthType.None)
 @Controller('authentication')
