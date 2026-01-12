@@ -3,7 +3,7 @@
 REST API for a marketplace built with [NestJS](https://nestjs.com/) using TypeScript and PostgreSQL.
 
 ## Table of Contents
-![Marketplace API demo](docs/demo-api.gif)
+- [Marketplace API demo](#api-demo)
 - [Installation](#installation)
 - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
