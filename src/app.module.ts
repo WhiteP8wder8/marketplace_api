@@ -13,9 +13,9 @@ import { CartModule } from './cart/cart.module';
 @Module({
   imports: [ConfigModule.forRoot(), TypeOrmModule.forRoot({
     type: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    username: 'postgres',
+    host: process.env.DB_HOST,
+    port: Number(process.env.DB_PORT) || 5432,
+    username: process.env.DB_USER,
     database: process.env.DB_NAME,
     password: process.env.DB_PASSWORD,
     autoLoadEntities: true,
