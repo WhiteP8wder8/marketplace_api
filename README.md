@@ -3,7 +3,7 @@
 REST API for a marketplace built with [NestJS](https://nestjs.com/) using TypeScript and PostgreSQL.
 
 ## Table of Contents
-
+![Marketplace API demo](docs/demo-api.gif)
 - [Installation](#installation)
 - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
@@ -14,13 +14,41 @@ REST API for a marketplace built with [NestJS](https://nestjs.com/) using TypeSc
 
 ---
 
+## API Demo
+
+The following demo shows:
+- application startup
+- authentication flow
+- protected endpoints
+- basic CRUD operations
+
+POST /authentication/sign-Up
+{
+  "name": "TestName",
+  "email": "user@mail.com",
+  "password": "secret"
+}
+
+POST /authentication/sign-In
+{
+  "email": "user@mail.com",
+  "password": "secret"
+}
+
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIs...",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIs..."
+}
+
+---
+
 ## Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/WhiteP8wder8/marketplace_api.git
-cd marketplace-api
+cd marketplace_api
 ```
 Install dependencies:
 ```bash
@@ -34,7 +62,12 @@ Create a .env file based on .env.example and configure database connection, JWT 
 
 Start in development mode:
 ```bash
+npm install -g @nestjs/cli
 nest start --watch
+```
+or
+```bash
+npm run start:dev
 ```
 Build and run for production:
 ```bash
