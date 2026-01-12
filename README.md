@@ -4,8 +4,10 @@ REST API for a marketplace built with [NestJS](https://nestjs.com/) using TypeSc
 
 ## Table of Contents
 - [Marketplace API demo](#api-demo)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Project](#running-the-project)
+- [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [API Endpoints](#api-endpoints)
@@ -42,6 +44,13 @@ POST /authentication/sign-In
 
 ---
 
+## Prerequisites
+
+This project requires a running PostgreSQL database.
+The application will not start without a database connection.
+
+---
+
 ## Installation
 
 Clone the repository:
@@ -73,6 +82,15 @@ Build and run for production:
 ```bash
 node dist/main
 ```
+
+---
+
+## Testing
+
+### Unit tests
+
+Unit tests are located next to the source files inside the src/ directory
+and are implemented using Jest and @nestjs/testing.
 
 ---
 
