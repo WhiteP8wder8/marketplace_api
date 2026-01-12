@@ -78,13 +78,15 @@ node dist/main
 
 ## Project Structure
 
+```text
 src/
-├─ cart/            # Cart module
-├─ categories/      # Categories module
-├─ iam/             # Authentication and authorization with JWT
-├─ products/        # Products module
-├─ users/           # Users module
-├─ main.ts          # Entry point
+├── cart/            # Cart module
+├── categories/      # Categories module
+├── iam/             # Authentication and authorization (JWT)
+├── products/        # Products module
+├── users/           # Users module
+└── main.ts          # Entry point
+```
 
 ---
 
