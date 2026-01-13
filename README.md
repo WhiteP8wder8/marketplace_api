@@ -126,6 +126,8 @@ TypeORM
 
 JWT
 
+Docker
+
 Bcrypt
 
 class-validator
