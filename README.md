@@ -49,6 +49,12 @@ POST /authentication/sign-In
 This project requires a running PostgreSQL database.
 The application will not start without a database connection.
 
+### Option 1: Run PostgreSQL with Docker (recommended)
+
+```bash
+docker-compose up -d
+```
+
 ---
 
 ## Installation
